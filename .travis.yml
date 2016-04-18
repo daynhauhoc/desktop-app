@@ -1,21 +1,18 @@
 language: node_js
 sudo: false
 node_js:
-  - 5
+- 5
 install:
-  - npm install -g nativefier
+- npm install -g nativefier
 script:
-  - make all
+- make all
 deploy:
   provider: releases
-  api_key: ZZHW49/kJWAUFQ4wSGyBe8HpAx5yiDueDWddRCS+vd9U51fz71LOmgSA4nXtJMa9vsN/sYinQF9p0vJXctJShFgtenA7GemqhYUsylptRK8HyV1Sqmobv8fQcp1vRJWzNHQjdegyNK2w3pYNY88Tz+lmP9pTmiq+Ff5nEzYlnzyGCqwcrb6cmqB/Ple59BWeaxf1iYcA0k/s3rHPmPk1i1zp6PU0X6sRzUpgBxYeg3nVMPYH0yqbMBHLeMAX7f1pd7yTMdhldeRpXv6qJr9cyXqDbYDHHnPKhpTSg6tfgceWo2Ez+HnbDh+cdGcVEeRx+gENBjZWC+RLDnEq9jz5hXY2PnDZGnaV92+zfs1ughm+o/BbjFxWg9u3sfn1RQWjwiWzghCJb6EqkvgmAIF+L/aYG0JE+GFmtx3QRyZ8ecfqnRGph9P9MfHwNnoLisLMvyB+YlwTH1Detg7xXxVU9OGH8JIfztUaFmoN+9jrMOe2gwFHVfR26mTK3V9G8EwcbNDhARVHC+CX7n8mMT5VXuhb/gPJQxuqad795nEYTY1l+R1kfwmxmcJpHWYomEZSUMXMeQurtG4rWj61ITMov+GF+4aoCn1DxuJS71M54Gz26owM7xllI+EAYwY+fw8sBO7jJYVWwvKwbonqtgL76/soG6/MVJmGLpMuzpKVI5g=
+  api_key:
+    secure: mv9SR6Zn0BGk3hdVDXa3G/SI4aUN9aJSW4aQrtUDb16omQXieHoQJEeCeR2j0ZSM+e47hYfXW073u6FeIXDfd+TyWltG8FJmpoTRgYCMB1KvKEdnWe4K6h8bw/kVZdRrpIJP4aSlU7NU5oRlgnEh+qOkayOaAUaYNsUetEk9Tpi5SGgY/xmtlVi/eD9LCbva2QeVZg1cfSAq/SF91ZmkRjly72TYPW+hiuttLeP7LU47p5yO6joTOd5iV/q2mAiURS3sBE9q77DC9s2HBuQB/UoMGAtQ+JoJ3KSonG47/3DzOWh2DJk3UK6QNcbpr4FsDGvc4BynVg4yf4BxWbo0E2sKTnyN3ElFIShxyD3YAFGpWtrYGS/B+szGfzRD/FTyNk70gG7/Y4a59biVOD1Xp7zcrB9nxNYaAa8H6uCGajJeujJ+va8WAdIJUiqPKrdTcNIzjgrEtpvXY4F8ny4WN/MHm56zqZdCFsfoaLubESIGlFsm82No1Wmv9w3BD1H50L0B4soh7fLPOXXRX1Sp4zOZAsXIH3gY8rtg4rDv/6nIjHlhBNddROVLpYWPQv2TTB7QyrzSsdBli2zTGJtfiXr8T6Y4ZMhpQjCx1AeDM9TMTbvoA1KnOzM2astZz+FzfSPJ/wobHQ9n5j2mGEHWkdvejNkCh6z/nwd/GDYm50E=
   file:
     - DayNhauHoc-darwin-x64.tar.gz
     - DayNhauHoc-linux-x64.tar.gz
     - DayNhauHoc-win32-x64.tar.gz
-  skip_cleanup: true
-  'on':
-    tags: true
-env:
-  global:
-    - secure: ZZHW49/kJWAUFQ4wSGyBe8HpAx5yiDueDWddRCS+vd9U51fz71LOmgSA4nXtJMa9vsN/sYinQF9p0vJXctJShFgtenA7GemqhYUsylptRK8HyV1Sqmobv8fQcp1vRJWzNHQjdegyNK2w3pYNY88Tz+lmP9pTmiq+Ff5nEzYlnzyGCqwcrb6cmqB/Ple59BWeaxf1iYcA0k/s3rHPmPk1i1zp6PU0X6sRzUpgBxYeg3nVMPYH0yqbMBHLeMAX7f1pd7yTMdhldeRpXv6qJr9cyXqDbYDHHnPKhpTSg6tfgceWo2Ez+HnbDh+cdGcVEeRx+gENBjZWC+RLDnEq9jz5hXY2PnDZGnaV92+zfs1ughm+o/BbjFxWg9u3sfn1RQWjwiWzghCJb6EqkvgmAIF+L/aYG0JE+GFmtx3QRyZ8ecfqnRGph9P9MfHwNnoLisLMvyB+YlwTH1Detg7xXxVU9OGH8JIfztUaFmoN+9jrMOe2gwFHVfR26mTK3V9G8EwcbNDhARVHC+CX7n8mMT5VXuhb/gPJQxuqad795nEYTY1l+R1kfwmxmcJpHWYomEZSUMXMeQurtG4rWj61ITMov+GF+4aoCn1DxuJS71M54Gz26owM7xllI+EAYwY+fw8sBO7jJYVWwvKwbonqtgL76/soG6/MVJmGLpMuzpKVI5g=
+  on:
+    repo: daynhauhoc/desktop-app
