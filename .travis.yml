@@ -8,6 +8,7 @@ script:
 - make all
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: mv9SR6Zn0BGk3hdVDXa3G/SI4aUN9aJSW4aQrtUDb16omQXieHoQJEeCeR2j0ZSM+e47hYfXW073u6FeIXDfd+TyWltG8FJmpoTRgYCMB1KvKEdnWe4K6h8bw/kVZdRrpIJP4aSlU7NU5oRlgnEh+qOkayOaAUaYNsUetEk9Tpi5SGgY/xmtlVi/eD9LCbva2QeVZg1cfSAq/SF91ZmkRjly72TYPW+hiuttLeP7LU47p5yO6joTOd5iV/q2mAiURS3sBE9q77DC9s2HBuQB/UoMGAtQ+JoJ3KSonG47/3DzOWh2DJk3UK6QNcbpr4FsDGvc4BynVg4yf4BxWbo0E2sKTnyN3ElFIShxyD3YAFGpWtrYGS/B+szGfzRD/FTyNk70gG7/Y4a59biVOD1Xp7zcrB9nxNYaAa8H6uCGajJeujJ+va8WAdIJUiqPKrdTcNIzjgrEtpvXY4F8ny4WN/MHm56zqZdCFsfoaLubESIGlFsm82No1Wmv9w3BD1H50L0B4soh7fLPOXXRX1Sp4zOZAsXIH3gY8rtg4rDv/6nIjHlhBNddROVLpYWPQv2TTB7QyrzSsdBli2zTGJtfiXr8T6Y4ZMhpQjCx1AeDM9TMTbvoA1KnOzM2astZz+FzfSPJ/wobHQ9n5j2mGEHWkdvejNkCh6z/nwd/GDYm50E=
   file:
@@ -16,3 +17,4 @@ deploy:
     - DayNhauHoc-win32-x64.tar.gz
   on:
     repo: daynhauhoc/desktop-app
+    tags: true
