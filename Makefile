@@ -10,7 +10,7 @@ osx:
 
 linux:
 				rm -rf DayNhauHoc-linux-x64* && \
-				nativefier --platform linux --name DayNhauHoc "http://daynhauhoc.com" && \
+				nativefier --platform linux --icon "icon.png" --name DayNhauHoc "http://daynhauhoc.com" && \
 				tar -zcvf DayNhauHoc-linux-x64.tar.gz DayNhauHoc-linux-x64
 
 win:
